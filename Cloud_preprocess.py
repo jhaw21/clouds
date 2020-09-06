@@ -12,7 +12,7 @@ folder = "*s/"
 ###for f in folders:
 ###    os.mkdir(f+"112x112")
 ##
-prefix = "*s_????"
+prefix = "*us_????"
 fnames = folder + prefix + ".jp*" # default
 paths = sorted(glob(fnames))
 
@@ -39,6 +39,7 @@ for path in paths:
 clouds = {'altostratus':0, 'cumulus':1, 'cumulonimbus':2, 'altocumulus':3,
           'stratocumulus':4, 'cirrostratus':5, 'stratus':6, 'nimbostratus':7,
           'cirrus':8, 'cirrocumulus':9}
+
 
 paths = sorted(glob("*s/112x112/*.png"))
 trainLabels = []
